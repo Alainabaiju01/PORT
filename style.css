@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.listitem{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+
+}
+.links{
+    text-decoration: none;/* for removing underline */
+    color: rgb(31, 28, 28);
+    font-weight: 600;
+
+}
+
+.links:hover {
+  color: #ff0044; /* color change for user action */
+  text-decoration: underline;
+}
+#userdetails{
+  font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+.homcon{
+  margin: 13% 0px 0px 10%;
+}
+
+#username{
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+.homimg{
+  width: 45%;
+  height: 78%;
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+
+}
+section {
+  width: 100%;
+  display: block;
+}
+
+
+
+.group1{
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 2s,left 1s;
+
+}
+
+.homimg:hover #shape{
+  bottom: 70%;
+}
+.homimg:hover #girl{
+  bottom: 40%;
+}
+
+
+
+#about {
+
+  padding: 200px 20px 0px 20px;   /* space top and sides */
+  min-height: 100vh;  
+  margin: 200px 20px 0px 20px;/* make it fill screen height */
+}
+
+
+.head{
+  text-align: center;
+
+}
+
+.mainhead{
+  font-size: 20px;
+}
+
+.subhead{
+  font-size: 20px;
+  color: aqua;
+}
+/* Container */
+#aboutcont {
+  display: flex;
+  align-items: flex-start;  /* align at top */
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;   /* important: prevents overlap */
+}
+
+/* Image */
+.aboutimg {
+  flex: 1 1 250px; /* grows, shrinks, min width */
+  text-align: center;
+}
+
+.aboutimg img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Text */
+.aboutdet {
+  flex: 2 1 400px;
+  font-size: 1.1rem;    /* bigger text */
+  line-height: 1.8;     /* more readable */
+}
+
+
+/* Info section */
+.infor {
+  margin-top: 15px;
+}
+
+.infouser {
+  margin: 8px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.infouser i {
+  margin-right: 8px;
+  color: #444;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  #aboutcont {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutdet {
+    text-align: center;
+  }
+
+  .infouser {
+    justify-content: center;
+  }
+}
+
+#skills{
+  margin:2% 0px 0px 8%;
+}
+
+.skillcont{
+margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap:30rem;
+
+
+}
+
+.heading{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
