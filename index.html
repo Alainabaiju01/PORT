@@ -3,108 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>porfolio</title>
-     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b41926d5d6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <title>portfolio</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- fontawesome cdn link -->     
+<script src="https://kit.fontawesome.com/8ba2484a5d.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+<!-- animate.style cdn link -->
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <!-- animate using AOS animation cdn link -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+   <!-- aos cdn script -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
+
 <body>
-    <div id="container">
-        <!-- navbar -->
-         <nav class="navbar">
-            <!-- logo -->
-             <img   width="120px" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidyDz4vUFPC_pC4WT44M-8OE1iyO2TcSr0Q&s" alt="logo">
-            <!-- links -->
-             <ul>
-             <li class="listitem"><a class="links" href="">ME</a></li>
-             <li class="listitem"><a class="links" href="">ABOUT</a></li>
-             <li class="listitem"><a class="links" href="">SKILL</a></li>
-             <li class="listitem"><a class="links" href="">CONTACT</a></li>
-            </ul>
-          </nav>
-         
+    <div id="container"></div>
 
-        <!-- home -->
-        <section id="home">
-            <div class="homcon">
-                <h1 id="username"> I'am Alaina <span id="lastnmae">Baiju</span></h1>
-                <p id="userdetails">This is my Portfolio <br> Details, skills and work experiences</p>
-                <a target="_blank" id="download" href="./assests/resume.pdf"download>DOWNLOAD CV</a> 
-            
+
+    <!-- nav bar -->
+     <nav class="navbar">
+
+        <!-- logo -->
+        <img class="logo"  src="./assets/logo.png" alt="logo">
+
+         <!-- links -->
+        <ul>
+          <li class="listItem"> <a class="links" href="#home">HOME</a> </li>
+          <li class="listItem"> <a class="links" href="#about">ABOUT</a></li>
+          <li class="listItem"> <a class="links" href="#skill">SKILLS</a></li>
+          <li class="listItem"> <a class="links" href="#contact">CONTACT</a></li>
+        </ul>
+     </nav>
+
+
+    <!-- home -->
+     <section id="home">
+
+        <div class="homeContents">
+            <h1 class="Username" class="animate__animated animate__bounce">I'm Ann <span class="lname">Steel</span></h1>
+            <p class="UserDetails">This is my official portfolio website to decsribe all <br>
+            Details and work experience in Web Development.</p>
+            <a  target="_blank" href="./assests/resume.pdf" download class="download">DOWNLOAD CV</a>
+        </div>
+
+
+        <div class="homeImages">
+            <!-- Shape -->
+            <img src="./assests/yellow.png" alt="shape" class="group1" id="shape">
+             <!-- Girl -->
+            <img src="./assests/ana.png" alt="girl" class="group1" id="girl">
+        </div>
+       
+
+
+
+     </section>
+     
+    <!-- about -->
+     <section id="about">
+
+        <div class="sectionHead">
+            <h1 class="mainHead">About Me</h1>
+            <span class="subHead">Introduction</span>
+        </div>
+
+        <div class="aboutContents" data-aos="flip-left">
+
+            <div class="aboutImage">
+                <img width=70% src="./assests/about.jpg" alt="about image">
             </div>
 
-            <div class="homimg">
-                <img id="shape" class="group1" src="./assests/yellow.png">
-                <img  id="girl"   class="group1" src="./assests/ana.png">
+            <div class="aboutDetails">
+                <p class="aboutPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error aspernatur placeat illo reiciendis ratione aliquid, hic porro suscipit autem sequi possimus rem quidem saepe quibusdam facilis adipisci perspiciatis maxime!
+                Vero, perspiciatis inventore! Numquam minus assumenda libero perferendis debitis corporis dolores. Fuga rem facere ipsam debitis voluptates consequatur. Iusto rem dicta assumenda saepe dolorem, expedita ratione fugit temporibus numquam perferendis?</p>
 
-            </div>
-        </section>
-
+                <div class="informations">
 
 
-        <!-- about -->
-         <section id="about">
-            <div class="head">
-                <div id="mainhead">About Me</div>
-                <div id="subhead">introduction</div>
-            </div>
-
-            <div id="aboutcont">
-                <div class="aboutimg">
-                 <img width="100%" src="./assests/about.jpg">
-                </div>
-            <div class="aboutdet"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque ad fuga enim molestiae! Obcaecati   incidunt impedit, reprehenderit sapiente, tenetur autem dignissimos saepe natus eveniet quia blanditiis repellat aperiam perspiciatis!</p>
-        
-            <div class="infor">
-                    <div class="infouser"><i class="fa-solid fa-user">ana</i></div>
-                    <div class="infouser"><i class="fa-solid fa-user">234567</i></div>
-                    <div class="infouser"><i class="fa-solid fa-user">ana@gmail.com</i>
+                    <div class="infoBox">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="infoSpan">Ann Steel</span>
                     </div>
-                </div>
-            </div>
-         </section>
-        <!-- skills -->
-         <div class="skills">
-            <div class="heading">
-                <div class="main">SKILLS</div>
-                <div class="sub">MYSILLS</div>
 
-            </div>
-            <div class="skillcont">
-                <div class="bar">
-                     
+                    <div class="infoBox">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="infoSpan">9087654321</span>
+                    </div>   
+
+                    <div class="infoBox">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="infoSpan">annsteel@gmail.com</span>    
+                    </div>
+                         
                 </div>
-                <div class="skillimg">
-                    <img width=50% src="./assests/skills.png" alt="">
-                </div>
+  
             </div>
-            
+        </div>
+     </section>
 
 
+    <!-- skills -->
+
+    <section id="skill">
+
+        <div class="sectionHead">
+            <h1 class="mainHead">Skills</h1>
+            <span class="subHead">My Skills</span>
+        </div>
+
+        <div class="skillContents">
+
+            <div class="progressBars">
+
+                <!-- html -->
+
+                <div class="bars">
+                    <h1 class="barHead">HTML</h1>
+                    <span class="barPercent">89%</span>
+                    <div class="baseBar"></div>
+                    <div class="htmlBar baseBar"></div>
+
+                </div>
+
+              <!-- CSS -->
+                   <div class="bars">
+                        <h1 class="barHead">CSS</h1>
+                        <span class="barPercent">92%</span>
+                        <div class="baseBar"></div>
+                        <div class="cssBar baseBar"></div>
+                   </div class="bars">
+
+                 <!-- Javascript -->
+                    <div class="bars">
+                        <h1 class="barHead">JAVASCRIPT</h1>
+                        <span class="barPercent">76%</span>
+                        <div class="baseBar"></div>
+                        <div class="jScriptBar baseBar"></div>
+                    </div>
+
+                   <!-- React -->
+                    <div class="bars">
+                        <h1 class="barHead">React</h1>
+                        <span class="barPercent">69%</span>
+                        <div class="baseBar"></div>
+                        <div class="reactBar baseBar"></div>
+                    </div>
+ 
+
+                
+
+            </div>
+
+
+
+            <div class="skillImage">
+                <img   width="100%" src="./assests/skills.png" alt="skills image" class="myskill">
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact">
+        
+    <div class="sectionHead">
+            <h1 class="mainHead">Contact</h1>
+            <span class="subHead">My Contacts</span>
+        </div>
+
+
+    <div class="iconCollections">
+
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-square-linkedin brands"></i>
+        </div>
+
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-github brands"></i>       
          </div>
-        <!-- contact -->
-          <div class="CONTACT">
-            <div class="heading">
-                <div class="main">CONTACT</div>
-                <div class="sub">MYCONTACT</div>
 
-            </div>
-        <!-- footer -->
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-twitter brands"></i>
+        </div>
 
-<!-- 
-HTML{
- scroll behaviour=smooth} 
- -->
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-whatsapp brands"></i> 
+       </div>
 
- <!-- 
- ::webkits-scrollbar{
-  width=10px;
-  border-raduis=10px
-  } -->
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-facebook brands"></i>
+        </div>
+
+        <div class="icons">
+            <a href="  https://www.linkedin.com/in/alainabaiju/" target="_blank"></a>
+            <i class="fa-brands fa-instagram brands"></i>
+        </div>
 
 
-    </div>
+
+
+
+    </div>    
+    </section>
+
+    <!-- footer -->
+     <footer>
+        <p class="copyright"> &copy; My Portfolio Website - August 2025, All Rights Reserved to &reg; Ann Steel</p>
+
+        <div class="icons upArrow">
+            <a href="#container">
+            <i class="fa-solid fa-angle-up brands "></i>
+            </a>
+        </div>
+
+
+     </footer>
 </body>
+
+<!-- aos intialisation link -->
+<script>
+  AOS.init();
+</script>
+
 </html>

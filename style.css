@@ -1,13 +1,14 @@
 *{
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Story Script", sans-serif;
+    color: black;
     box-sizing: border-box;
 }
 
 #container{
-  width: 100%;
-  height: 100vh;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .navbar{
@@ -17,175 +18,262 @@
     margin-left: 100px;
 }
 
-.listitem{
+.logo{
+    width: 12%;
+}
+
+.listItem{
     list-style: none;
     display: inline;
     margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color:green;
+}
+
+.homeContents{
+    margin: 13% 0px 0px 8%;
+}
+
+.Username{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.lname{
+    color: orange;
+}
+
+.UserDetails{
+    font-size: 20px;
+    line-height: 1.4;
 
 }
-.links{
-    text-decoration: none;/* for removing underline */
-    color: rgb(31, 28, 28);
+
+.download{
+    border: solid;
+    display: inline-block;
+    margin-top: 30px;
+    border: solid;
+    color:white;
+    background-color:black;
+    text-decoration: none;
+    border-radius:10px;
+    padding:10px;
+}
+
+.homeImages{
+    width: 50%;
+    height: 75%;
+    position:absolute;
+    bottom:0px;
+    right: 30px;
+}
+
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: bottom 2s ,left 1s;
+
+}
+
+.homeImages:hover #shape{
+    bottom:70px;
+}
+
+.homeImages:hover #girl{
+    left:40%;
+}
+
+#about{
+    margin: 15% 8% 0% 8%;
+}
+
+.sectionHead{
+    text-align: center;
+
+}
+
+.mainHead{
+    font-size: 30px;
+}
+
+.subHead{
+    font-size: 20px;
+    color: orange;
+}
+
+.aboutContents{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    align-items: center;
+
+}
+
+.aboutDetails{
+    font-size: 20px;
+    text-align: justify;
     font-weight: 600;
 
 }
-
-.links:hover {
-  color: #ff0044; /* color change for user action */
-  text-decoration: underline;
-}
-#userdetails{
-  font-size: 20px;
-    font-family: "Roboto", sans-serif;
-  line-height: 1.2;
-}
-.homcon{
-  margin: 13% 0px 0px 10%;
-}
-
-#username{
-  font-size: 60px;
-  font-family: "Roboto", sans-serif;
-}
-
-.homimg{
-  width: 45%;
-  height: 78%;
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-
-}
-section {
-  width: 100%;
-  display: block;
-}
-
-
-
-.group1{
-  position: absolute;
-  height: 100%;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: bottom 2s,left 1s;
+.informations{
+    margin-top: 1.3rem;
 
 }
 
-.homimg:hover #shape{
-  bottom: 70%;
-}
-.homimg:hover #girl{
-  bottom: 40%;
+.infoBox{
+    margin-bottom: 10px;
 }
 
-
-
-#about {
-
-  padding: 200px 20px 0px 20px;   /* space top and sides */
-  min-height: 100vh;  
-  margin: 200px 20px 0px 20px;/* make it fill screen height */
+.infoSpan{
+    margin-left: 1.3 rem;
 }
 
-
-.head{
-  text-align: center;
-
+#skill{
+  margin: 15% 8% 0% 8%;
 }
 
-.mainhead{
-  font-size: 20px;
+.skillContents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2 rem;
+    
 }
 
-.subhead{
-  font-size: 20px;
-  color: aqua;
-}
-/* Container */
-#aboutcont {
-  display: flex;
-  align-items: flex-start;  /* align at top */
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  flex-wrap: wrap;   /* important: prevents overlap */
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
 }
 
-/* Image */
-.aboutimg {
-  flex: 1 1 250px; /* grows, shrinks, min width */
-  text-align: center;
+.barHead ,.barPercent{
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
-.aboutimg img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-  object-fit: cover;
+.baseBar{
+    width:100%;
+    height:0.5rem;
+    border-radius:10px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    
+}
+.htmlBar{
+    width:89%;
+    background-color: orange;
 }
 
-/* Text */
-.aboutdet {
-  flex: 2 1 400px;
-  font-size: 1.1rem;    /* bigger text */
-  line-height: 1.8;     /* more readable */
+.cssBar{
+    width:92%;
+    background-color: orange;
+}
+
+.jScriptBar{
+    width:76%;
+    background-color: orange;
 }
 
 
-/* Info section */
-.infor {
-  margin-top: 15px;
+.reactBar{
+    width: 69%;
+    background-color: orange;
 }
 
-.infouser {
-  margin: 8px 0;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
+#contact{
+      margin: 15% 8% 0% 8%;
 }
 
-.infouser i {
-  margin-right: 8px;
-  color: #444;
-}
-
-/* Responsive for small screens */
-@media (max-width: 768px) {
-  #aboutcont {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .aboutdet {
-    text-align: center;
-  }
-
-  .infouser {
+.iconCollections{
+    display:flex;
     justify-content: center;
-  }
-}
-
-#skills{
-  margin:2% 0px 0px 8%;
-}
-
-.skillcont{
-margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-  gap:30rem;
-
+    align-items: center;
+    margin-top: 5%;
 
 }
 
-.heading{
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
+.icons{
+    /* border: solid; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 10px;
+
 }
 
+.icons:hover{
+    background-image: linear-gradient(to bottom right,red,orange,yellow);
+
+}
+
+.brands{
+    color:black;
+    font-size: 30px;
+}
+
+.icons:hover .brands{
+    color: white;
+    animation:rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+
+    100%{
+        transform: rotate(30deg);
+    }
+
+}
+footer{
+     margin-top: 8%;
+}
+
+
+.copyright{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.upArrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
